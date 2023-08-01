@@ -14,7 +14,11 @@ export default function RootLayout({ children }) {
       <head>
         <title>Wordsearch Solver</title>
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <main>
+          {children}
+        </main>
+      </body>
     </html>
   )
 }
